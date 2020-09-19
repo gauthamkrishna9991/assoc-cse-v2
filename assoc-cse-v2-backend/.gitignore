@@ -1,0 +1,8 @@
+# Ignore VSCode files
+.vscode/
+
+# Ignore NPM Dependencies
+node_modules/
+
+# Also ignore all typescript files
+dist/

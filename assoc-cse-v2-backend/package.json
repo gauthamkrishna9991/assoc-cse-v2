@@ -1,0 +1,38 @@
+{
+  "name": "assoc-cse-v2",
+  "version": "0.1.0-PROTO",
+  "description": "Website Backend for Computer Science and Engineering Association, Written in TypeScript/Express (NodeJS)",
+  "main": "dist/index.js",
+  "scripts": {
+    "start:dev": "nodemon dist/index.js",
+    "build:dev": "tsc --watch --preserveWatchOutput",
+    "dev": "echo \"Start the project in assoc-cse-v2 before starting\"; concurrently \"npm:build:dev\" \"npm:start:dev\"",
+    "test": "echo \"Add tests into this project!\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cseanitc/assoc-cse-v2.git"
+  },
+  "keywords": [
+    "NITC",
+    "National_Institute_of_Technology_Calicut",
+    "CSED",
+    "Computer_Science_and_Engineering_Department",
+    "CSEA",
+    "Computer_Science_and_Engineering_Association"
+  ],
+  "author": "cseanitc <csea@nitc.ac.in>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cseanitc/assoc-cse-v2/issues"
+  },
+  "homepage": "https://github.com/cseanitc/assoc-cse-v2#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.8",
+    "concurrently": "^5.3.0",
+    "nodemon": "^2.0.4"
+  }
+}
