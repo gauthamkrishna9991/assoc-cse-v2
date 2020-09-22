@@ -19,8 +19,9 @@ if platform.system() == "Linux":
     try:
         f = open("/etc/os-release", "r")
         releasefile = parse_releasefile(f.readlines(200))
+        print(releasefile)
         # If the platform is RPM-Based
-        if releasefile['ID'] == "fedora" or releasefile['ID'] == "centos" or releasefile['ID'] == "rhel":
+        if releasefile['ID'] == "fedora" or releasefile['ID'] == "\"centos\"" or releasefile['ID'] == "rhel":
             subprocess.run("./initialize/rpm.sh")
         #else if is Debian-Based
         elif releasefile['ID'] == "ubuntu" or releasefile['ID'] == "debian":
