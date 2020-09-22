@@ -1,4 +1,4 @@
-#!/usr/bn/bash
+#!/usr/bin/bash
 
 # Initialization Script for Ubuntu
 
